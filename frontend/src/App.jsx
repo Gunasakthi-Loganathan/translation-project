@@ -113,7 +113,7 @@ function App() {
     try {
       setIsLoading(true)
 
-      const response = await fetch('/api/translate', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/translate`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ text: inputText, target: targetLang })
@@ -205,7 +205,7 @@ function App() {
     try {
       setFileLoading(true)
 
-      const response = await fetch('/api/translate-file', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/translate-file`, {
         method: 'POST',
         body: formData
       })
