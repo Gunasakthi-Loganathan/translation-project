@@ -1,4 +1,8 @@
 Flask==2.3.3
 Flask-Cors==4.0.0
-googletrans==4.0.0-rc1
+gunicorn==21.2.0
 gTTS==2.5.1
+deep-translator==1.11.4
+pypdf==4.3.1
+python-docx==1.1.2
+Werkzeug==2.3.7
